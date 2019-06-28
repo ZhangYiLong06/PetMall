@@ -1,0 +1,132 @@
+@import '@/lib/reset.scss';
+.box{
+  .header{
+    height: .88rem;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9;
+    h3{
+      font: 200 .5rem/.88rem "";
+      color: #363636;
+      float: left;
+      margin-left: .4rem;
+      margin-bottom: .19rem;
+    }
+    .home_top1{
+      float: right;
+      width: .72rem;
+      height: .72rem;
+      margin: .1rem .8rem 0 0;
+    }
+  }
+  .content{
+    
+    .nav{
+      height: 1.7rem;
+      background: #FFF;
+      margin-top: -.1rem;
+      margin-bottom: .2rem;
+      .nav-box{
+        height: 100%;
+        .home_ul_nav{
+          @include rect(100%, 100%);
+          @include flexbox();
+          line-height: 1.7rem;
+          
+          a{
+            &:nth-child(2){
+              i{background-position-x: -1.96rem}
+            }
+            &:nth-child(3){
+              i{background-position-x: -3.98rem;}
+            }
+            &:nth-child(4){
+              i{background-position-x: -5.9rem}
+            }
+            @include flex();
+            @include rect(auto, 100%);
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content();
+            @include align-items();
+            @include text-color(#666666);
+            i{
+              background: url(/assets/home_nav.png) no-repeat;
+              background-size: cover;
+              width: .58rem;
+              height: .58rem;
+              margin: .2rem 0 .1rem 0;
+            }
+          }
+        }
+        p{line-height: .54rem;}
+      }
+    }
+    .claw{
+      height: 1.22rem;
+      background: #fff;
+      margin-bottom: .28rem;
+      img{
+        float: left;
+        width: .73rem;
+        height: .79rem;
+        margin: .29rem .27rem .14rem .35rem;
+      }
+      .claw-right{
+        float:left;
+        h3{
+          margin-top:.4rem;
+          font-size: .15rem; 
+        }
+        p{color: #999}
+      }
+    }
+    .buy{
+      .home_ul{
+        .buy-top{
+          background: #fff;
+          h3{
+            display: inline-block;
+            color: #363636;
+            font-size: .34rem;
+            margin: .15rem .1rem 0 .26rem;
+          }
+          p{
+            display: inline-block;
+            color: #666666;
+            font-size: .24rem;
+          }
+        }
+        li{
+          background: #fff;
+          .buy-bottom{
+            @include flexbox();
+            img{
+              width: 1.44rem;
+              height: 1.44rem;
+              margin: .24rem .26rem .24rem .3rem;
+            }
+            .buy-bottom-right{
+              width: 100%;
+              border-bottom: .02rem solid #CCCCCC;
+              p{
+                margin-top: .38rem;
+                color: #999999;
+                font-size: .24rem;
+                margin-bottom: .13rem;
+                h4{
+                  color: #363636;
+                  font-size: .3rem;
+                }
+              }
+              b{
+                font-size:.26rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

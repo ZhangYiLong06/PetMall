@@ -1,0 +1,97 @@
+@import '@/lib/reset.scss';
+.box{
+  .header{
+    text-align: center;
+    position: relative;
+    position: fixed;
+    .find_top1{
+      width: .15rem;
+      height: .25rem;
+      position: absolute;
+      left: .56rem;
+      top: .32rem;
+    }
+    a{
+      line-height: .88rem;
+      margin-left: .8rem;
+      font-size: .36rem;
+      color: #363636;
+    }
+    .twoa{
+      margin-right: .61rem;
+    }
+  }
+  .content{
+    background: #F7F7F3;
+    margin-top: .88rem;
+    .content_nav{
+      height: .94rem;
+      background: #2fc783;
+      @include flexbox();
+      justify-content: space-around;
+      line-height: .94rem;
+      b{
+        position: relative;
+        font-size: .3rem;
+        color: #fff;
+        i{
+          background: url(/assets/find_content.png);
+          background-size: .22rem .13rem;
+          position: absolute;
+          width: .22rem;
+          height: .13rem;
+          top: .42rem;
+          left: .8rem;
+        }
+      }
+    }
+    .find_ul{
+      @include flexbox();
+      justify-content: space-around;
+      flex-wrap: wrap;
+      li{
+        width: 3.29rem;
+        height: 4.68rem;
+        background: #fff;
+        border-radius: .3rem;
+        padding: .26rem .09rem .09rem .21rem;
+        position: relative;
+        margin-top: .19rem;
+        .dogpng{
+          width: 2.6rem;
+          height: 3.08rem;
+        }
+        h4{
+          font-size: .28rem;
+          color: #363636;
+        }
+        p{
+          font-size: .24rem;
+          color: #999999;
+        }
+        .content_li_bottom{
+          margin-top: .1rem;
+          .moneypng{
+            width: .13rem;
+            height: .18rem;
+          }
+          b{
+            font-size: .28rem;
+            color: #666666;
+            margin-left: .05rem;
+          }
+          i{
+            background: url(/assets/find_kx.png);
+            background-size: .34rem .31rem;
+            display: block;
+            width: .34rem;
+            height: .31rem;
+            position: absolute;
+            right: .27rem;
+            bottom: .1rem;
+          }
+        }
+      }
+    }
+  }
+}

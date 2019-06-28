@@ -1,0 +1,13 @@
+@import '@/lib/reset.scss';
+
+.box{
+  .news_header{
+    width: 100%;
+    height: 4.12rem;
+    background: url(/assets/news_bj.png) no-repeat,url(/assets/news_bj2.png);
+    background-size:100% 3rem;
+  }
+  .content{
+    margin-top: 0;
+  }
+}
